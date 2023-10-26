@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Units</title>
+</head>
+
+<body>
+    <form id="form" onsubmit="conversionDetermine();return false;">
+        <input type="number" id="number" placeholder="#" required>
+        <select name="unit1" id="unit1" required>
+            <option value="oz">oz</option>
+            <option value="lb">lb</option>
+            <option value="g">g</option>
+        </select>
+        <span>convert to:</span>
+        <select name="unit2" id="unit2" required>
+            <option value="oz">oz</option>
+            <option value="lb">lb</option>
+            <option value="g">g</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="output"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
